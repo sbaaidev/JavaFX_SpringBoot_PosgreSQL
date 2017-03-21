@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="372.0" prefWidth="358.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.JavaFXSpringboot.controller.EtudiantController">
+   <children>
+      <Label layoutX="97.0" layoutY="85.0" text="Entrer le Nom de l'etudiant" />
+      <Button layoutX="147.0" layoutY="171.0" mnemonicParsing="false" onAction="#saveEtudiant" text="Ajouter" />
+      <TextField fx:id="txtNomEtudiant" layoutX="94.0" layoutY="123.0" />
+      <TableView fx:id="tableEtudiant" layoutX="63.0" layoutY="203.0" prefHeight="155.0" prefWidth="232.0">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colnom" prefWidth="156.0" text="Nom" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
